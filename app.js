@@ -1,11 +1,12 @@
 const API_KEY = "AIzaSyCAhcxb7VJrUoHIk6rOgiqoEbR9dAcssgk";
 
-// const API_URL = 'https://tenor.googleapis.com/v1/trending?q=';
+// const API_URL = 'https://tenor.googleapis.com/v2/trending?key=';
 
 var SEARCH_URL = "https://tenor.googleapis.com/v2/search?q="
 const TRENDING_URL = "https://tenor.googleapis.com/v2/featured?key="
 
 const filterSalient = document.getElementById('filterSalient')
+const filterTendency = document.getElementById('filterTendency')
 
 const limit = 5;
 
@@ -16,11 +17,10 @@ const generateBody = async () => {
   // await fetch(URL)
   //   .then(response => response.json())
   //   .then(data => {
-  //     console.log(data.results);
   //     for (let i = 0; i < limit; i++) {
   //       let img = document.createElement('img')
   //       img.src = data.results[i]["media_formats"]["nanogif"]["url"]
-  //       filterSalient.appendChild(img)
+  //       filterTendency.appendChild(img)
   //       console.log(img);
   //     }
   //   })
