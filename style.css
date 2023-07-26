@@ -31,6 +31,10 @@ h1{
   background-image: linear-gradient(90deg,#4cafff,#2e93e6);
 }
 
+input{
+  padding: .2rem;
+}
+
 .search{
   width: 60%;
   height: 70%;

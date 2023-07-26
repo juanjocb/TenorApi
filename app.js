@@ -8,7 +8,7 @@ const TRENDING_URL = "https://tenor.googleapis.com/v2/featured?key="
 const filterSalient = document.getElementById('filterSalient')
 const filterTendency = document.getElementById('filterTendency')
 
-const limit = 5;
+const limit = 50;
 
 const generateBody = async () => {
 
@@ -55,7 +55,7 @@ function getData() {
   let search = document.getElementById("search")
 
   search.addEventListener('keydown', async function (event) {
-    if (event.keyCode === 13) {
+    if (event.keyCode) {
       filterSalient.innerHTML = ""
       const searchWord = search.value;
       searchWord.innerHTML = "";
